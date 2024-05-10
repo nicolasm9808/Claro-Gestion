@@ -1,5 +1,11 @@
 #Imports
+from datos import *
 from menu import *
+
+#Constants
+BASE_DE_DATOS_USUARIOS = "usuarios.json"
+
+usuarios = cargar_datos(BASE_DE_DATOS_USUARIOS)
 
 while True:
     menu_principal()
@@ -7,6 +13,7 @@ while True:
     if menu == 1:
         menu_gestion_usuarios()
         opc = pedir_opcion()
+        guardar_datos(usuarios,BASE_DE_DATOS_USUARIOS)
     elif menu == 2:
         menu_gestion_servicios()
         opc = pedir_opcion()
