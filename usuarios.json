@@ -1,1 +1,49 @@
-{}
+{
+    "usuarios": [
+        {
+            "nombre": "Nicolas",
+            "documento": "123456",
+            "telefono": "312345689",
+            "correo": "nicolas@coreo.com",
+            "edad": 25,
+            "estrato": 3,
+            "direccion": "Cra 18 # 12-5",
+            "departamento": "Santander",
+            "municipio": "Floridablanca",
+            "categoria": "cliente leal",
+            "productos": [
+                "Celular",
+                "Audifonos"
+            ],
+            "servicios": [
+                "Internet",
+                "Telefon\u00eda"
+            ],
+            "historial": [
+                {
+                    "fecha": 12,
+                    "pqrs": "El celular no enciende"
+                },
+                {
+                    "fecha": 14,
+                    "pqrs": "Gracias por el cambio del equipo"
+                }
+            ]
+        },
+        {
+            "nombre": "Alejandro",
+            "documento": "df54",
+            "telefono": "646455",
+            "correo": "sdfsndjkfsnd",
+            "edad": 8,
+            "estrato": 5,
+            "direccion": "asdfsdf",
+            "departamento": "sfasdg",
+            "municipio": "asdgsd",
+            "categoria": "Cliente nuevo",
+            "productos": [],
+            "servicios": [],
+            "historial": []
+        }
+    ]
+}

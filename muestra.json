@@ -1,0 +1,32 @@
+{
+    "usuarios":[
+        {
+            "nombre": "Nicolas",
+            "documento": "123456",
+            "edad": 25,
+            "telefono": "312345689",
+            "estrato": 3,
+            "direccion": "Cra 18 # 12-5",
+            "departamento": "Santander",
+            "municipio": "Floridablanca",
+            "correo": "nicolas@coreo.com",
+            "categoria":"cliente leal",
+            "productos":[
+                "Celular",
+                "Audifonos"
+            ],
+            "servicios":[
+                "Internet",
+                "Telefonía"
+            ],
+            "historial":[
+                {"fecha":12,
+                "pqrs":"El celular no enciende"
+                },
+                {"fecha":14,
+                "pqrs":"Gracias por el cambio del equipo"
+                }
+            ]
+        }
+    ]
+}
