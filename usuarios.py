@@ -8,12 +8,14 @@ def crear_ususario(datos):
     try:
         usuario["edad"] = int(input("Ingrese la edad: "))
     except Exception:
-        print("Valor ingresado no válido, se debe actualizar luego con la opción (3)Actualizar ususario")
+        print("¡Valor ingresado no válido!")
+        print("Se debe actualizar luego con la opción (3) Actualizar ususario")
         usuario["edad"] = 999
     try:
         usuario["estrato"] = int(input("Ingrese el estrato económico: "))
     except Exception:
-        print("Valor ingresado no válido, se debe actualizar luego con la opción (3)Actualizar ususario")
+        print("¡Valor ingresado no válido!")
+        print("Se debe actualizar luego con la opción (3) Actualizar ususario")
         usuario["estrato"] = 999
     usuario["direccion"]=input("Ingrese la dirección: ")
     usuario["departamento"]=input("Ingrese el departamento: ")
@@ -32,7 +34,10 @@ def mostrar_usuario(datos):
     documento = input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
-            print(datos["usuarios"][i])
+            print("----------------------------------------------------------------")
+            print("Información de usuario:")
+            for llave, valor in datos["usuarios"][i].items():
+                print(llave.title()," : ",valor)
             return(datos)
     print("Usuario no encontrado")
 
@@ -48,12 +53,14 @@ def actualizar_usuario(datos):
             try:
                 datos["usuarios"][i]["edad"] = int(input("Ingrese la edad: "))
             except Exception:
-                print("Valor ingresado no válido, se debe actualizar luego con la opción (3)Actualizar ususario")
+                print("¡Valor ingresado no válido!")
+                print("Se debe actualizar luego con la opción (3) Actualizar ususario")
                 datos["usuarios"][i]["edad"] = 999
             try:
                 datos["usuarios"][i]["estrato"] = int(input("Ingrese el estrato económico: "))
             except Exception:
-                print("Valor ingresado no válido, se debe actualizar luego con la opción (3)Actualizar ususario")
+                print("¡Valor ingresado no válido!")
+                print("Se debe actualizar luego con la opción (3) Actualizar ususario")
                 datos["usuarios"][i]["estrato"] = 999
             datos["usuarios"][i]["direccion"]=input("Ingrese la dirección: ")
             datos["usuarios"][i]["departamento"]=input("Ingrese el departamento: ")
@@ -70,7 +77,7 @@ def eliminar_usuario(datos):
             datos["usuarios"].pop(i)
             print("Usuario eliminado!")
             return datos
-    print("Participante no existe")
+    print("Usuario no existe")
     return datos    
 
 def registrar_pqrs(datos):

@@ -1,0 +1,214 @@
+{
+    "productos": {
+        "celulares": [
+            {
+                "nombre": "iphone12",
+                "marca": "Apple",
+                "color": "negro",
+                "tamanio_pantalla": "6,1 pulgadas",
+                "memoria": "128 GB",
+                "ram": "4 GB",
+                "bateria": "2815 mAh",
+                "anios_garantia": 1,
+                "precio": 3650000
+            },
+            {
+                "nombre": "iphone15",
+                "marca": "Apple",
+                "color": "negro",
+                "tamanio_pantalla": "6,1 pulgadas",
+                "memoria": "128 GB",
+                "ram": "6 GB",
+                "bateria": "3877 mAh",
+                "anios_garantia": 1,
+                "precio": 4435000
+            },
+            {
+                "nombre": "iphone15 pro max",
+                "marca": "Apple",
+                "color": "blanco",
+                "tamanio_pantalla": "6,7 pulgadas",
+                "memoria": "256 GB",
+                "ram": "8 GB",
+                "bateria": "4850 mAh",
+                "anios_garantia": 1,
+                "precio": 6730000
+            },
+            {
+                "nombre": "galaxy s23 fe",
+                "marca": "Samsung",
+                "color": "gris",
+                "tamanio_pantalla": "6,4 pulgadas",
+                "memoria": "256 GB",
+                "ram": "8 GB",
+                "bateria": "4500 mAh",
+                "anios_garantia": 1,
+                "precio": 2599000
+            },
+            {
+                "nombre": "galaxy s23",
+                "marca": "Samsung",
+                "color": "verde",
+                "tamanio_pantalla": "6,1 pulgadas",
+                "memoria": "256 GB",
+                "ram": "8 GB",
+                "bateria": "3900 mAh",
+                "anios_garantia": 1,
+                "precio": 3390000
+            }
+        ],
+        "computadores": [
+            {
+                "nombre": "hp 245 g9",
+                "marca": "HP",
+                "tamanio_pantalla": "14 pulgadas",
+                "procesador": "AMD R3",
+                "memoria": "256 GB SSD",
+                "ram": "8 GB",
+                "sistema_operativo": "Windows 11",
+                "anios_garantia": 1,
+                "precio": 2260000
+            },
+            {
+                "nombre": "vivobook go 15",
+                "marca": "ASUS",
+                "tamanio_pantalla": "15.6 pulgadas",
+                "procesador": "intel core i3",
+                "memoria": "512 GB SSD",
+                "ram": "8 GB",
+                "sistema_operativo": "Windows 11",
+                "anios_garantia": 1,
+                "precio": 2350000
+            },
+            {
+                "nombre": "ideapad slim 3",
+                "marca": "Lenovo",
+                "tamanio_pantalla": "14 pulgadas",
+                "procesador": "AMD R3",
+                "memoria": "512 GB SSD",
+                "ram": "8 GB",
+                "sistema_operativo": "Windows 11",
+                "anios_garantia": 1,
+                "precio": 2980000
+            }
+        ],
+        "audifonos": [
+            {
+                "nombre": "airpods2",
+                "marca": "Apple",
+                "anios_garantia": 1,
+                "precio": 793000
+            },
+            {
+                "nombre": "redmi buds 5 pro",
+                "marca": "Xiaomi",
+                "anios_garantia": 0.5,
+                "precio": 300000
+            },
+            {
+                "nombre": "galaxy buds fe",
+                "marca": "Samsung",
+                "anios_garantia": 0.5,
+                "precio": 508000
+            },
+            {
+                "nombre": "freebuds 5",
+                "marca": "Huawei",
+                "anios_garantia": 0.5,
+                "precio": 600000
+            }
+        ]
+    },
+    "servicios": {
+        "prepago_movil": [
+            {
+                "nombre": "300 min",
+                "minutos": "300",
+                "navegacion": "0 GB",
+                "dias_vigencia": 2,
+                "precio": 2000
+            },
+            {
+                "nombre": "todo incluido 6",
+                "minutos": "ilimitados",
+                "navegacion": "1,4 GB",
+                "dias_vigencia": 6,
+                "precio": 7000
+            },
+            {
+                "nombre": "todo incluido 7",
+                "minutos": "ilimitados",
+                "navegacion": "2 GB",
+                "dias_vigencia": 7,
+                "precio": 8000
+            },
+            {
+                "nombre": "todo incluido 10",
+                "minutos": "ilimitados",
+                "navegacion": "3,5 GB",
+                "dias_vigencia": 10,
+                "precio": 11500
+            }
+        ],
+        "postpago_movil": [
+            {
+                "nombre": "60 GB",
+                "minutos": "ilimitados",
+                "navegacion": "60 GB",
+                "dias_vigencia": 30,
+                "precio": 42900
+            },
+            {
+                "nombre": "75 GB",
+                "minutos": "ilimitados",
+                "navegacion": "75 GB",
+                "dias_vigencia": 30,
+                "precio": 47900
+            },
+            {
+                "nombre": "90 GB",
+                "minutos": "ilimitados",
+                "navegacion": "90 GB",
+                "dias_vigencia": 30,
+                "precio": 55900
+            },
+            {
+                "nombre": "100 GB",
+                "minutos": "ilimitados",
+                "navegacion": "100 GB",
+                "dias_vigencia": 30,
+                "precio": 59900
+            }
+        ],
+        "internet_hogar": [
+            {
+                "nombre": "500 megas",
+                "velocidad_bajada": "500 megas",
+                "velocidad_subida": "30 megas",
+                "dias_vigencia": 30,
+                "precio": 165900
+            },
+            {
+                "nombre": "400 megas",
+                "velocidad_bajada": "400 megas",
+                "velocidad_subida": "30 megas",
+                "dias_vigencia": 30,
+                "precio": 125900
+            },
+            {
+                "nombre": "300 megas",
+                "velocidad_bajada": "300 megas",
+                "velocidad_subida": "10 megas",
+                "dias_vigencia": 30,
+                "precio": 89900
+            },
+            {
+                "nombre": "200 megas",
+                "velocidad_bajada": "200 megas",
+                "velocidad_subida": "10 megas",
+                "dias_vigencia": 30,
+                "precio": 75900
+            }
+        ]
+    }
+}
