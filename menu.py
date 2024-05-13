@@ -1,7 +1,7 @@
 def menu_principal():
     print("****************************************************************")
     print("MENÚ PRINCIPAL:")
-    print("(Marque la opción correspondiente para desplegar las opciones)")
+    print("(Marque la opción correspondiente para desplegar el siguiente menú)")
     print("")
     print("(1) GESTIÓN DE USUARIOS")
     print("(2) GESTIÓN DE SERVICIOS")
@@ -19,7 +19,7 @@ def menu_gestion_usuarios():
     print("(2) Mostrar información de usuario")
     print("(3) Actualizar usuario")
     print("(4) Eliminar usuario")
-    print("(5) Registrar interacción de usuario con la empresa")
+    print("(5) Registrar PQRS del usuario")
     print("(0) Regresar al Menú principal")
     print("----------------------------------------------------------------")
 

@@ -32,18 +32,20 @@
         },
         {
             "nombre": "Alejandro",
-            "documento": "df54",
-            "telefono": "646455",
-            "correo": "sdfsndjkfsnd",
-            "edad": 8,
-            "estrato": 5,
-            "direccion": "asdfsdf",
-            "departamento": "sfasdg",
-            "municipio": "asdgsd",
+            "documento": "123",
+            "telefono": "123",
+            "correo": "123sd",
+            "edad": 20,
+            "estrato": 4,
+            "direccion": "adadasda",
+            "departamento": "santander",
+            "municipio": "bucaramanga",
             "categoria": "Cliente nuevo",
             "productos": [],
             "servicios": [],
-            "historial": []
+            "historial": [
+                "Hola"
+            ]
         }
     ]
 }
