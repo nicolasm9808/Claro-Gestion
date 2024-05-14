@@ -2,7 +2,7 @@
     "usuarios": [
         {
             "nombre": "Nicolas",
-            "documento": "132",
+            "documento": "123456",
             "telefono": "312345689",
             "correo": "nicolas@coreo.com",
             "edad": 25,
@@ -10,19 +10,13 @@
             "direccion": "Cra 18 # 12-5",
             "departamento": "Santander",
             "municipio": "Floridablanca",
-            "categoria": "cliente leal",
+            "categoria": "cliente nuevo",
             "productos": [
-                "iphone12",
-                "iphone12",
-                "iphone12",
-                "iphone12",
+                "iphone15",
                 "iphone15"
             ],
             "servicios": [
-                "90 GB",
-                "90 GB",
-                "90 GB",
-                "90 GB"
+                "300 megas",
             ],
             "historial": [
                 {
@@ -46,29 +40,9 @@
             "departamento": "santander",
             "municipio": "bucaramanga",
             "categoria": "cliente leal",
-            "productos": [
-                "vivobook go 15",
-                "vivobook go 15",
-                "vivobook go 15",
-                "vivobook go 15",
-                "vivobook go 15",
-                "vivobook go 15",
-                "iphone12",
-                "iphone12"
-            ],
-            "servicios": [
-                "60 GB",
-                "60 GB",
-                "60 GB",
-                "60 GB",
-                "60 GB"
-            ],
-            "historial": [
-                {
-                    "fecha": "2024-05-13",
-                    "pqrs": "dskfnkfa"
-                }
-            ]
+            "productos": [],
+            "servicios": [],
+            "historial": []
         }
     ]
 }
