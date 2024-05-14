@@ -11,19 +11,8 @@
                 "bateria": "2815 mAh",
                 "anios_garantia": 1,
                 "precio": 3650000,
-                "vendidos": 6,
-                "clientes": [
-                    {
-                        "documento": "132",
-                        "nombre": "Nicolas",
-                        "cantidad": 4
-                    },
-                    {
-                        "documento": "123",
-                        "nombre": "Alejandro",
-                        "cantidad": 2
-                    }
-                ]
+                "vendidos": 0,
+                "clientes": []
             },
             {
                 "nombre": "iphone15",
@@ -35,12 +24,12 @@
                 "bateria": "3877 mAh",
                 "anios_garantia": 1,
                 "precio": 4435000,
-                "vendidos": 1,
+                "vendidos": 2,
                 "clientes": [
                     {
-                        "documento": "132",
+                        "documento": "123456",
                         "nombre": "Nicolas",
-                        "cantidad": 1
+                        "cantidad": 2
                     }
                 ]
             },
@@ -108,7 +97,7 @@
                 "sistema_operativo": "Windows 11",
                 "anios_garantia": 1,
                 "precio": 2350000,
-                "vendidos": 6,
+                "vendidos": 0,
                 "clientes": []
             },
             {
@@ -224,7 +213,7 @@
                 "navegacion": "90 GB",
                 "dias_vigencia": 30,
                 "precio": 55900,
-                "vendidos": 4,
+                "vendidos": 0,
                 "clientes": []
             },
             {
@@ -262,8 +251,14 @@
                 "velocidad_subida": "10 megas",
                 "dias_vigencia": 30,
                 "precio": 89900,
-                "vendidos": 0,
-                "clientes": []
+                "vendidos": 1,
+                "clientes": [
+                    {
+                        "documento": "123456",
+                        "nombre": "Nicolas",
+                        "cantidad": 2
+                    }
+                ]
             },
             {
                 "nombre": "200 megas",
