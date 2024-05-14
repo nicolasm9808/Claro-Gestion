@@ -3,6 +3,8 @@ from datetime import datetime
 
 def menu_principal():
     print("****************************************************************")
+    print("-------------------------CLARO GESTIÓN--------------------------")
+    print("****************************************************************")
     print("MENÚ PRINCIPAL:")
     print("(Marque la opción correspondiente para desplegar el siguiente menú)")
     print("")
