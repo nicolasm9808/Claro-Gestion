@@ -7,78 +7,6 @@
             "cliente": "123456",
             "cantidad": 2,
             "valor": 8870000
-        },
-        {
-            "consecutivo": 2,
-            "fecha": "2024-05-13",
-            "producto": "iphone15",
-            "cliente": "3",
-            "cantidad": 3,
-            "valor": 13305000
-        },
-        {
-            "consecutivo": 3,
-            "fecha": "2024-05-13",
-            "producto": "iphone12",
-            "cliente": "123",
-            "cantidad": 2,
-            "valor": 8870000
-        },
-        {
-            "consecutivo": 4,
-            "fecha": "2024-05-13",
-            "producto": "iphone15",
-            "cliente": "123456",
-            "cantidad": 2,
-            "valor": 8870000
-        },
-        {
-            "consecutivo": 5,
-            "fecha": "2024-05-13",
-            "producto": "vivobook go 15",
-            "cliente": "123456",
-            "cantidad": 3,
-            "valor": 6780000
-        },
-        {
-            "consecutivo": 6,
-            "fecha": "2024-05-13",
-            "producto": "vivobook go 15",
-            "cliente": "123",
-            "cantidad": 1,
-            "valor": 2350000
-        },
-        {
-            "consecutivo": 7,
-            "fecha": "2024-05-13",
-            "producto": "vivobook go 15",
-            "cliente": "132",
-            "cantidad": 2,
-            "valor": 4520000
-        },
-        {
-            "consecutivo": 8,
-            "fecha": "2024-05-14",
-            "producto": "iphone12",
-            "cliente": "123",
-            "cantidad": 2,
-            "valor": 7300000
-        },
-        {
-            "consecutivo": 9,
-            "fecha": "2024-05-14",
-            "producto": "iphone12",
-            "cliente": "132",
-            "cantidad": 4,
-            "valor": 14600000
-        },
-        {
-            "consecutivo": 10,
-            "fecha": "2024-05-14",
-            "producto": "iphone15",
-            "cliente": "132",
-            "cantidad": 1,
-            "valor": 4435000
         }
     ],
     "servicios": [
@@ -89,22 +17,6 @@
             "cliente": "123456",
             "cantidad": 1,
             "valor": 89900
-        },
-        {
-            "consecutivo": 2,
-            "fecha": "2024-05-13",
-            "producto": "60 GB",
-            "cliente": "123",
-            "cantidad": 5,
-            "valor": 239500
-        },
-        {
-            "consecutivo": 3,
-            "fecha": "2024-05-13",
-            "producto": "90 GB",
-            "cliente": "132",
-            "cantidad": 4,
-            "valor": 223600
         }
     ]
 }
