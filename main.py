@@ -4,6 +4,7 @@ from menu import *
 from usuarios import *
 from servicios import *
 from ventas import *
+from reportes import *
 
 #Constants
 BASE_DE_DATOS_USUARIOS = "usuarios.json"
@@ -33,6 +34,8 @@ while True:
                 registrar_pqrs(usuarios)
             elif opc == 0:
                 break
+            else:
+                print("¡Opción no válida!")
             guardar_datos(usuarios,BASE_DE_DATOS_USUARIOS)
     elif menu == 2:
         while True:
@@ -95,8 +98,12 @@ while True:
 
             elif opc == 0:
                 break
+            else:
+                print("¡Opción no válida!")
     elif menu == 3:
         while True:
+            validar_categoria(usuarios)
+            guardar_datos(usuarios,BASE_DE_DATOS_USUARIOS)
             menu_ventas()
             opc = pedir_opcion()
             if opc == 1:
@@ -114,7 +121,7 @@ while True:
                                 break
                             elif categoria != -1:
                                 mostrar_producto_servicio(catalogo,tipo,categoria)
-            if opc == 2:
+            elif opc == 2:
                 while True:
                     tipo = seleccionar_tipo()
                     if tipo == 0:
@@ -128,14 +135,27 @@ while True:
                                 registrar_venta(catalogo,tipo,categoria,ventas,usuarios)
                                 guardar_datos(ventas,BASE_DE_DATOS_VENTAS)
                                 guardar_datos(usuarios,BASE_DE_DATOS_USUARIOS)     
-            if opc == 3:
+                                guardar_datos(catalogo,BASE_DE_DATOS_CATALOGO)
+            elif opc == 3:
                 mostrar_ventas(ventas)
             elif opc == 0:
                 break
-
+            else:
+                print("¡Opción no válida!")
     elif menu == 4:
-        menu_reportes()
-        opc = pedir_opcion()
+        while True:
+            menu_reportes()
+            opc = pedir_opcion()
+            if opc == 1:
+                cantidad_productos_servicios(catalogo)
+            elif opc == 2:
+                mas_populares(catalogo)
+            elif opc == 3:
+                usuarios_por_producto_servicio(catalogo)
+            elif opc == 0:
+                break
+            else:
+                print("¡Opción no válida!")
     elif menu == 0:
         print("SALIR")
         print("****************************************************************")

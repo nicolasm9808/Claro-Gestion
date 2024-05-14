@@ -1,3 +1,6 @@
+from traceback import format_exc
+from datetime import datetime
+
 def menu_principal():
     print("****************************************************************")
     print("MENÚ PRINCIPAL:")
@@ -6,7 +9,7 @@ def menu_principal():
     print("(1) GESTIÓN DE USUARIOS")
     print("(2) GESTIÓN DE SERVICIOS")
     print("(3) VENTAS")
-    print("(4) INFORMES")
+    print("(4) REPORTES")
     print("(0) SALIR")
     print("****************************************************************")
 
@@ -51,9 +54,9 @@ def menu_reportes():
     print("MENÚ DE REPORTES:")
     print("(Marque la opción correspondiente)")
     print("")
-    print("(1) Generar informe de cantidad de productos y servicios")
-    print("(2) Generar informe de servicios y productos más populares")
-    print("(3) Generar informe de usuarios que adquirieron cada producto o servicio")
+    print("(1) Generar reporte de cantidad de productos y servicios")
+    print("(2) Generar reporte de productos y servicios más populares")
+    print("(3) Generar reporte de usuarios que adquirieron cada producto o servicio")
     print("(0) Regresar al Menú principal")
     print("----------------------------------------------------------------")
 
@@ -63,6 +66,10 @@ def pedir_opcion():
         return opc
     except Exception:
         print("Valor inválido")
+        exc = format_exc()
+        hora = str(datetime.now())
+        with open("excepciones.txt","a") as e:
+            e.write(hora+"\n "+ exc+"\n ")
         return -1
 
 def seleccionar_tipo():

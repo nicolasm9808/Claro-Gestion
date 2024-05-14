@@ -1,3 +1,4 @@
+from traceback import format_exc
 from datetime import datetime
 
 def crear_ususario(datos):
@@ -13,12 +14,20 @@ def crear_ususario(datos):
         print("¡Valor ingresado no válido!")
         print("Se debe actualizar luego con la opción (3) Actualizar ususario")
         usuario["edad"] = 999
+        exc = format_exc()
+        hora = str(datetime.now())
+        with open("excepciones.txt","a") as e:
+            e.write(hora+"\n "+ exc+"\n ")
     try:
         usuario["estrato"] = int(input("Ingrese el estrato económico: "))
     except Exception:
         print("¡Valor ingresado no válido!")
         print("Se debe actualizar luego con la opción (3) Actualizar ususario")
         usuario["estrato"] = 999
+        exc = format_exc()
+        hora = str(datetime.now())
+        with open("excepciones.txt","a") as e:
+            e.write(hora+"\n "+ exc+"\n ")
     usuario["direccion"]=input("Ingrese la dirección: ")
     usuario["departamento"]=input("Ingrese el departamento: ")
     usuario["municipio"]=input("Ingrese el municipio: ")
@@ -58,12 +67,20 @@ def actualizar_usuario(datos):
                 print("¡Valor ingresado no válido!")
                 print("Se debe actualizar luego con la opción (3) Actualizar ususario")
                 datos["usuarios"][i]["edad"] = 999
+                exc = format_exc()
+                hora = str(datetime.now())
+                with open("excepciones.txt","a") as e:
+                    e.write(hora+"\n "+ exc+"\n ")
             try:
                 datos["usuarios"][i]["estrato"] = int(input("Ingrese el estrato económico: "))
             except Exception:
                 print("¡Valor ingresado no válido!")
                 print("Se debe actualizar luego con la opción (3) Actualizar ususario")
                 datos["usuarios"][i]["estrato"] = 999
+                exc = format_exc()
+                hora = str(datetime.now())
+                with open("excepciones.txt","a") as e:
+                    e.write(hora+"\n "+ exc+"\n ")
             datos["usuarios"][i]["direccion"]=input("Ingrese la dirección: ")
             datos["usuarios"][i]["departamento"]=input("Ingrese el departamento: ")
             datos["usuarios"][i]["municipio"]=input("Ingrese el municipio: ")
@@ -97,3 +114,11 @@ def registrar_pqrs(datos):
             return datos
     print("Usuario no encontrado")
     return
+
+def validar_categoria(datos):
+    for i in range(len(datos["usuarios"])):
+        if len(datos["usuarios"][i]["productos"]) >= 2 or len(datos["usuarios"][i]["servicios"]) >= 4:
+            if len(datos["usuarios"][i]["productos"]) >= 4 or len(datos["usuarios"][i]["servicios"]) >= 8:
+                datos["usuarios"][i]["categoria"] = "cliente leal"
+            else:
+                datos["usuarios"][i]["categoria"] = "cliente regular"
