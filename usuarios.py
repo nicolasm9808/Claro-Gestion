@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def crear_ususario(datos):
     datos = dict(datos)
     usuario={}
@@ -87,8 +89,11 @@ def registrar_pqrs(datos):
     documento = input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
-            pqrs = input("Ingrese el PQRS del usuario: ")
-            datos["usuarios"][i]["historial"].append(pqrs)
+            nuevo = {}
+            nuevo["fecha"] = str(datetime.today().date())
+            nuevo["pqrs"] = input("Ingrese el PQRS del usuario: ")
+            datos["usuarios"][i]["historial"].append(nuevo)
             print("PQRS registrado con éxito")
-            return(datos)
+            return datos
     print("Usuario no encontrado")
+    return

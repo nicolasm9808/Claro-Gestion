@@ -41,9 +41,8 @@ def menu_ventas():
     print("(Marque la opción correspondiente)")
     print("")
     print("(1) Mostrar catálogo")
-    print("(2) Registrar venta de producto")
-    print("(3) Registrar venta de servicio")
-    print("(4) Mostrar ventas")
+    print("(2) Registrar venta de producto / servicio")
+    print("(3) Mostrar ventas")
     print("(0) Regresar al Menú principal")
     print("----------------------------------------------------------------")
 
@@ -69,8 +68,8 @@ def pedir_opcion():
 def seleccionar_tipo():
     print("----------------------------------------------------------------")
     print("Seleccione la categoría")
-    print("(1) Producto")
-    print("(2) Servicio")
+    print("(1) Productos")
+    print("(2) Servicios")
     print("(0) para regresar al Menú anterior")
     opc = pedir_opcion()
     if opc == 0:

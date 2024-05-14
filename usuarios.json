@@ -11,21 +11,15 @@
             "departamento": "Santander",
             "municipio": "Floridablanca",
             "categoria": "cliente leal",
-            "productos": [
-                "Celular",
-                "Audifonos"
-            ],
-            "servicios": [
-                "Internet",
-                "Telefon\u00eda"
-            ],
+            "productos": [],
+            "servicios": [],
             "historial": [
                 {
-                    "fecha": 12,
+                    "fecha": "2024-05-13",
                     "pqrs": "El celular no enciende"
                 },
                 {
-                    "fecha": 14,
+                    "fecha": "2024-05-13",
                     "pqrs": "Gracias por el cambio del equipo"
                 }
             ]
@@ -42,9 +36,18 @@
             "municipio": "bucaramanga",
             "categoria": "Cliente nuevo",
             "productos": [],
-            "servicios": [],
+            "servicios": [
+                "60 GB",
+                "60 GB",
+                "60 GB",
+                "60 GB",
+                "60 GB"
+            ],
             "historial": [
-                "Hola"
+                {
+                    "fecha": "2024-05-13",
+                    "pqrs": "dskfnkfa"
+                }
             ]
         }
     ]

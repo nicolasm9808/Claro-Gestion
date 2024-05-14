@@ -3,13 +3,16 @@ from datos import *
 from menu import *
 from usuarios import *
 from servicios import *
+from ventas import *
 
 #Constants
 BASE_DE_DATOS_USUARIOS = "usuarios.json"
 BASE_DE_DATOS_CATALOGO = "catalogo.json"
+BASE_DE_DATOS_VENTAS = "ventas.json"
 
 usuarios = cargar_datos(BASE_DE_DATOS_USUARIOS)
 catalogo = cargar_datos(BASE_DE_DATOS_CATALOGO)
+ventas = cargar_datos(BASE_DE_DATOS_VENTAS)
 
 while True:
     menu_principal()
@@ -93,8 +96,43 @@ while True:
             elif opc == 0:
                 break
     elif menu == 3:
-        menu_ventas()
-        opc = pedir_opcion()
+        while True:
+            menu_ventas()
+            opc = pedir_opcion()
+            if opc == 1:
+                mostrar_catalogo(catalogo)
+                print("Seleccione un producto / servicio")
+                print("para mostrar la información completa")
+                while True:
+                    tipo = seleccionar_tipo()
+                    if tipo == 0:
+                        break
+                    elif tipo != -1:
+                        while True:
+                            categoria = seleccionar_categoria(tipo)
+                            if categoria == 0:
+                                break
+                            elif categoria != -1:
+                                mostrar_producto_servicio(catalogo,tipo,categoria)
+            if opc == 2:
+                while True:
+                    tipo = seleccionar_tipo()
+                    if tipo == 0:
+                        break
+                    elif tipo != -1:
+                        while True:
+                            categoria = seleccionar_categoria(tipo)
+                            if categoria == 0:
+                                break
+                            elif categoria != -1:
+                                registrar_venta(catalogo,tipo,categoria,ventas,usuarios)
+                                guardar_datos(ventas,BASE_DE_DATOS_VENTAS)
+                                guardar_datos(usuarios,BASE_DE_DATOS_USUARIOS)     
+            if opc == 3:
+                mostrar_ventas(ventas)
+            elif opc == 0:
+                break
+
     elif menu == 4:
         menu_reportes()
         opc = pedir_opcion()

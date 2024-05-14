@@ -116,5 +116,25 @@
                 "precio": 165900
             }
         ]
-    }
+    },
+    "ventas_productos":[
+        {
+            "consecutivo": 1,
+            "fecha": 12,
+            "producto": "iphone15",
+            "cliente": "123456",
+            "cantidad": 2,
+            "valor": 8870000
+        }
+    ],
+    "ventas_servicios":[
+        {
+            "consecutivo": 1,
+            "fecha": 12,
+            "producto": "300 megas",
+            "cliente": "123456",
+            "cantidad": 1,
+            "valor": 89900
+        }
+    ]
 }

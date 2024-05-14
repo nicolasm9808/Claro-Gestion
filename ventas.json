@@ -1,0 +1,54 @@
+{
+    "productos": [
+        {
+            "consecutivo": 1,
+            "fecha": "2024-04-13",
+            "producto": "iphone15",
+            "cliente": "123456",
+            "cantidad": 2,
+            "valor": 8870000
+        },
+        {
+            "consecutivo": 2,
+            "fecha": "2024-05-13",
+            "producto": "iphone15",
+            "cliente": "3",
+            "cantidad": 3,
+            "valor": 13305000
+        },
+        {
+            "consecutivo": 3,
+            "fecha": "2024-05-13",
+            "producto": "iphone12",
+            "cliente": "123",
+            "cantidad": 2,
+            "valor": 8870000
+        },
+        {
+            "consecutivo": 4,
+            "fecha": "2024-05-13",
+            "producto": "iphone15",
+            "cliente": "123456",
+            "cantidad": 2,
+            "valor": 8870000
+        }
+    ],
+    "servicios": [
+        {
+            "consecutivo": 1,
+            "fecha": "2024-03-13",
+            "producto": "300 megas",
+            "cliente": "123456",
+            "cantidad": 1,
+            "valor": 89900
+        },
+        {
+            "consecutivo": 2,
+            "fecha": "2024-05-13",
+            "producto": "60 GB",
+            "cliente": "123",
+            "cantidad": 5,
+            "valor": 239500
+        }
+    ]
+}
